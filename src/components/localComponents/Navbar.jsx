@@ -17,7 +17,7 @@ export default function Navbar() {
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className=" px-4 py-2 text-sm font-medium rounded-md hover:bg-accent  transition-colors"
+            className=" px-4 py-2 text-sm font-medium rounded-md hover:bg-secondary   transition-colors"
           >
             <Link to="/">Home</Link>
           </NavigationMenuLink>
@@ -25,7 +25,7 @@ export default function Navbar() {
 
         {/* Tools Dropdown */}
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="  capitalize flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-md hover:bg-accent transition-colors">
+          <NavigationMenuTrigger className="  capitalize flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-md hover:bg-secondary  transition-colors">
             tools
             <ChevronDown className="w-3 h-3 transition-transform duration-200 group-data-[state=open]:rotate-180" />
           </NavigationMenuTrigger>
@@ -61,7 +61,7 @@ export default function Navbar() {
         </NavigationMenuItem>
         {/* Study Dropdown */}
         <NavigationMenuItem className="relative">
-          <NavigationMenuTrigger className="study-group capitalize flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-md hover:bg-accent transition-colors">
+          <NavigationMenuTrigger className="study-group capitalize flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-md hover:bg-secondary  transition-colors">
             study
             <ChevronDown className="w-3 h-3 transition-transform duration-200 study-group-data-[state=open]:rotate-180" />
           </NavigationMenuTrigger>
@@ -96,7 +96,7 @@ export default function Navbar() {
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className=" px-4 py-2 text-sm font-medium rounded-md hover:bg-accent  transition-colors"
+            className=" px-4 py-2 text-sm font-medium rounded-md hover:bg-secondary   transition-colors"
           >
             <Link to="/about">About</Link>
           </NavigationMenuLink>
