@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./routes/Home";
 import About from "./routes/About";
+import Settings from "./routes/Settings";
 // Tools
 import Calculator from "./routes/toolsRoutes/Calculator";
 import Marks from "./routes/toolsRoutes/Marks";
@@ -17,6 +18,7 @@ export default function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />{" "}
+        <Route path="settings" element={<Settings />} />
         <Route path="tools">
           <Route path="calculator" element={<Calculator />} />
           <Route path="marks" element={<Marks />} />

@@ -49,6 +49,14 @@ export default function Navbar() {
                 marks
               </Link>
             </NavigationMenuLink>
+            <NavigationMenuLink asChild>
+              <Link
+                to="/tools/resources"
+                className="block px-3 py-2 text-sm hover:bg-secondary rounded-sm   capitalize"
+              >
+                resources
+              </Link>
+            </NavigationMenuLink>
           </NavigationMenuContent>
         </NavigationMenuItem>
         {/* Study Dropdown */}
