@@ -120,3 +120,6 @@
     @apply bg-background text-foreground;
   }
 }
+.dark #logo img {
+  filter: invert(1) brightness(2);
+}
