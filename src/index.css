@@ -42,6 +42,8 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-primary-light: var(--primary-light);
+  --spacing-space-1: 4rem;
 }
 
 :root {
@@ -52,7 +54,8 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.541 0.225 255.99); /*    Nadjah Primary Blue */
+  --primary: oklch(69.034% 0.10749 255.173); /*    Nadjah Primary Blue */
+  --primary-light: oklch(0.541 0.225 255.99); /*    Nadjah Primary Blue */
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -86,7 +89,8 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.17 0.03 264); /*    Match Card */
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.707 0.165 254.62); /*    Vibrant Blue for Dark Mode */
+  --primary: oklch(77.045% 0.12972 36.159); /*    Vibrant Blue for Dark Mode */
+  --primary-light: oklch(0.707 0.165 254.62); /*    Vibrant Blue for Dark Mode */
   --primary-foreground: oklch(0.129 0.042 264.695);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
@@ -120,6 +124,7 @@
     @apply bg-background text-foreground;
   }
 }
+
 .dark #logo img {
   filter: invert(1) brightness(2);
 }

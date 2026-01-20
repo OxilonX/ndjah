@@ -57,7 +57,7 @@ export default function Layout() {
         </div>
       </header>
 
-      <main className="flex-1 container mx-auto px-4 py-8 bg-muted/50 dark:bg-card/30 rounded-xl shadow-sm">
+      <main className="flex flex-col  flex-1  bg-foreground/2 dark:bg-secondary/50 rounded-xl shadow-sm ">
         <Outlet />
       </main>
 
