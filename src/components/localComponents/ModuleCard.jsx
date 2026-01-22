@@ -17,7 +17,7 @@ export function ModuleCard({ title, image, youtubeUrl, channel }) {
         />
       </div>
 
-      <CardHeader className="pt-6">
+      <CardHeader className="pt-6 mt-auto">
         <h2 className="text-background dark:text-foreground/90 text-base font-medium leading-7 tracking-tight">
           {title}
         </h2>
@@ -34,7 +34,7 @@ export function ModuleCard({ title, image, youtubeUrl, channel }) {
         </div>
       </CardContent>
 
-      <CardFooter className={"py-6"}>
+      <CardFooter className={"py-6 "}>
         <Button
           className="w-full bg-primary hover:bg-primary/90 font-semibold cursor-pointer"
           onClick={() => window.open(youtubeUrl, "_blank")}

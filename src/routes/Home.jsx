@@ -10,7 +10,7 @@ export default function Home() {
         className="grid grid-cols-2 items-center container mx-auto px-8 mt-[-40px] min-h-screen"
       >
         <div className="flex flex-col gap-4 ">
-          <h1 className="text-5xl text-foreground font-black uppercase leading-16">
+          <h1 className="text-5xl text-foreground font-black capitalize leading-16 font-lexanda">
             Your First Step to be the Major of Your Promotion
           </h1>
           <p className="w-5/6 text-sm text-muted-foreground  font-medium leading-6.5">
@@ -25,7 +25,7 @@ export default function Home() {
       </section>
       <section
         id="features-page"
-        className=" container mx-auto px-8  py-20 bg-foreground"
+        className=" container mx-auto px-8  py-12 bg-foreground dark:bg-foreground/95"
       >
         <div className="grid grid-cols-3 gap-8">
           <div className="flex flex-col items-center text-center p-6 space-y-4">
@@ -66,7 +66,7 @@ export default function Home() {
       </section>
       <section id="modules-page" className="  min-h-screen">
         <div className="container mx-auto px-8 flex flex-col ">
-          <h1 className="text-4xl font-bold text-foreground text-center capitalize py-space-1">
+          <h1 className="text-sect-title font-bold text-foreground text-center capitalize pt-24 pb-16">
             master your modules
           </h1>
           <div className="grid grid-cols-4 gap-10">
@@ -105,8 +105,49 @@ export default function Home() {
             ></ModuleCard>
           </div>
         </div>
+      </section>
+      <section id="roadmap-page" className="pt-24 min-h-screen">
+        <div className="container mx-auto px-8 ">
+          <h1 className="text-sect-title font-bold text-foreground text-center capitalize mb-16">
+            The Major's Roadmap
+          </h1>
 
-        <div></div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+            <div className="hidden md:block absolute top-8 left-[16.6%] right-[16.6%] h-3 bg-primary/90 z-0" />
+            <div className="relative flex flex-col items-center text-center group">
+              <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-black mb-6 z-10  outline-8 outline-foreground/2 dark:outline-background">
+                01
+              </div>
+              <h3 className="text-xl font-bold mb-2">Input Your Marks</h3>
+              <p className="text-muted-foreground text-sm max-w-[250px]">
+                Enter your S3/S4 module marks as you get them throughout the
+                semester.
+              </p>
+            </div>
+
+            <div className="relative flex flex-col items-center text-center group">
+              <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-black mb-6 z-10  outline-8 outline-foreground/2 dark:outline-background">
+                02
+              </div>
+              <h3 className="text-xl font-bold mb-2">Analyze Gap</h3>
+              <p className="text-muted-foreground text-sm max-w-[250px]">
+                Nadjah calculates exactly what mark you need in the final exam
+                to reach your target GPA.
+              </p>
+            </div>
+
+            <div className="relative flex flex-col items-center text-center group">
+              <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-black mb-6 z-10  outline-8 outline-foreground/2 dark:outline-background">
+                03
+              </div>
+              <h3 className="text-xl font-bold mb-2">Claim the Rank</h3>
+              <p className="text-muted-foreground text-sm max-w-[250px]">
+                Follow our curated module resources to master the difficult
+                chapters and rank #1.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

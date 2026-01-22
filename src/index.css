@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-
+/*google fonts imports*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -44,6 +46,9 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --color-primary-light: var(--primary-light);
   --spacing-space-1: 4rem;
+  --text-sect-title:2.5rem;
+  --font-lexanda:  "Lexend Exa", sans-serif;
+  --font-montserrat:"Montserrat", sans-serif;
 }
 
 :root {
@@ -121,7 +126,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply font-montserrat bg-background text-foreground;
   }
 }
 
